@@ -1,0 +1,10 @@
+(name [if …])
+
+(trigger
+    (tab if))
+
+(only-in source.d)
+
+(snippet [if(%{1="condition"}) {
+	%{0}
+}])

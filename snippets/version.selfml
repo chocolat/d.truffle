@@ -1,0 +1,10 @@
+(name [version(ident) { … }])
+
+(trigger
+    (tab ver))
+
+(only-in source.d)
+
+(snippet [version(%{1="Posix"}) {
+	%{0}
+}])

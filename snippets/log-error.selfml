@@ -1,0 +1,8 @@
+(name [log.error(…)])
+
+(trigger
+    (tab loge))
+
+(only-in source.d)
+
+(snippet [log.error("%{1}");])

@@ -1,0 +1,34 @@
+(detector
+    (extension d)
+    (extension di))
+
+(detector
+    (content-matches [^#!.*\bg?dmd\b.]))
+
+(folding
+    (start [(?x)/\*\*(?!\*)|^(?![^{]*?//|[^{]*?/\*(?!.*?\*/.*?\{)).*?\{\s*($|//|/\*(?!.*?\*/.*\S))])
+    (stop [(?<!\*)\*\*/|^\s*\}]))
+
+(shell-variables
+    (TM_COMMENT_START [// ])
+    (TM_COMMENT_START_2 /*)
+    (TM_COMMENT_END_2 */)
+    (TM_COMMENT_MODE_2 block)
+    (TM_COMMENT_START_3 /+)
+    (TM_COMMENT_END_3 +/)
+    (TM_COMMENT_MODE_3 block))
+
+(comment.line [// ])
+
+(comment.block /* */)
+
+(indentation.decrease [^(.*\*/)?\s*\}([^}{"']*\{)?[;\s]*(//.*|/\*.*\*/\s*)?$|^\s*(public|private|protected):\s*$])
+
+(indentation.increase [^.*\{[^}"']*$|^\s*(public|private|protected):\s*$])
+
+(indentation.increase-next-line-only [^(?!(.*[};:])?\s*(//|/\*.*\*/\s*$)).*[^\s;:{}]\s*$])
+
+(in [source.d meta.definition.method, source.d meta.definition.constructor, source.d meta.definition.destructor]
+    (symbol-list
+        (transformation [
+      s/^\s*([^\)]+)/ $1/;  # pad])))

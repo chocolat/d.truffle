@@ -1,0 +1,6 @@
+(menu
+    (submenu DSSS [command.build-file-(dsss)] [command.clean-(dsss)])
+    (submenu Declarations snippet.import snippet.class snippet.struct snippet.enum snippet.method --- snippet.if snippet.if-else snippet.try-catch snippet.try-finally snippet.try-catch-finally snippet.while snippet.foreach snippet.foreach-reverse --- snippet.version snippet.debug snippet.debugm --- snippet.log-trace snippet.log-info snippet.log-warn snippet.log-error snippet.log-fatal --- snippet.return)
+    (submenu Testing snippet.unittest)
+    (submenu Idioms snippet.main snippet.main-with-args --- snippet.logger snippet.constant --- snippet.out snippet.out-format snippet.err snippet.err-format)
+    (submenu Documentation snippet.continue-block-comment))

@@ -1,0 +1,15 @@
+(trigger
+    (key [[alt][cmd]B]))
+
+(name [Build Current File])
+
+(only-in source.d)
+
+(input nothing)
+
+(output html)
+
+(save nothing)
+
+(script [require_cmd dsss
+dsss build "$TM_FILEPATH" 2>&1 | grep -v 'indirect jmp without' | grep -vE 'Default prefix .+ is unwritable, using .+ instead' | pre])

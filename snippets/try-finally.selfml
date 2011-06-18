@@ -1,0 +1,12 @@
+(name [try … finally])
+
+(trigger
+    (tab tf))
+
+(only-in source.d)
+
+(snippet [try {
+	%{1}
+} finally {
+	%{0}
+}])

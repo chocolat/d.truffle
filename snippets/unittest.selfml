@@ -1,0 +1,10 @@
+(name [unittest { … }])
+
+(trigger
+    (tab unit))
+
+(only-in source.d)
+
+(snippet [unittest {
+	%{0}
+}])

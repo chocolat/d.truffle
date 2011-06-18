@@ -1,0 +1,15 @@
+(trigger
+    (key [[ctrl][alt][cmd]C]))
+
+(name Clean)
+
+(only-in source.d)
+
+(input nothing)
+
+(output html)
+
+(save nothing)
+
+(script [require_cmd dsss
+dsss clean "$TM_DIRECTORY" | pre])

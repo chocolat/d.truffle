@@ -1,0 +1,8 @@
+(name [import …])
+
+(trigger
+    (tab im))
+
+(only-in source.d)
+
+(snippet [import %{1="%{TM_FILEPATH/.+\\/([^\\/]+)\\/[^\\/]+\\.d$/\\l$1/}."};])

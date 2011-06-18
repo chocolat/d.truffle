@@ -1,0 +1,8 @@
+(name [log.fatal(…)])
+
+(trigger
+    (tab logf))
+
+(only-in source.d)
+
+(snippet [log.fatal("%{1}");])

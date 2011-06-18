@@ -1,0 +1,10 @@
+(name [debug { … }])
+
+(trigger
+    (tab debug))
+
+(only-in source.d)
+
+(snippet [debug {
+	%{0}
+}])

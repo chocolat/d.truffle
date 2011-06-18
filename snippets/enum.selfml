@@ -1,0 +1,8 @@
+(name [enum … { … }])
+
+(trigger
+    (tab en))
+
+(only-in source.d)
+
+(snippet [enum %{1="name"}() { %{3} }])

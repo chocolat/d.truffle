@@ -1,0 +1,13 @@
+(name [if … else])
+
+(trigger
+    (tab ife))
+
+(only-in source.d)
+
+(snippet [if(%{1="condition"}) {
+	%{2}
+}
+else {
+	%{0}
+}])

@@ -1,0 +1,8 @@
+(name [log.warn(…)])
+
+(trigger
+    (tab logw))
+
+(only-in source.d)
+
+(snippet [log.warn("%{1}");])

@@ -1,0 +1,8 @@
+(name [log.info(…)])
+
+(trigger
+    (tab log))
+
+(only-in source.d)
+
+(snippet [log.info("%{1}");])

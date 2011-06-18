@@ -1,0 +1,13 @@
+(name [struct … { … }])
+
+(trigger
+    (tab st))
+
+(only-in source.d)
+
+(snippet [/**
+ * %{2}
+ */
+struct %{1="name"}() {
+	%{3}
+}])

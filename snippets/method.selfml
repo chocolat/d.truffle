@@ -1,0 +1,13 @@
+(name [method … { … }])
+
+(trigger
+    (tab me))
+
+(only-in source.d)
+
+(snippet [/**
+ * %{2}
+ */
+%{1="void"} %{2="method"}() {
+	%{3}
+}])

@@ -1,0 +1,8 @@
+(name [return …])
+
+(trigger
+    (tab r))
+
+(only-in source.d)
+
+(snippet [return %{0};])

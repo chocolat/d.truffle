@@ -1,0 +1,10 @@
+(name [foreach(e; …) { … }])
+
+(trigger
+    (tab fe))
+
+(only-in source.d)
+
+(snippet [foreach(%{1="e"}; %{0}) {
+	
+}])

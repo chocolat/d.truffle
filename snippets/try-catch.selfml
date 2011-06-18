@@ -1,0 +1,12 @@
+(name [try … catch])
+
+(trigger
+    (tab tc))
+
+(only-in source.d)
+
+(snippet [try {
+	%{2}
+} catch (%{1="Exception"} e) {
+	%{0}
+}])

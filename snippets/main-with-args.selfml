@@ -1,0 +1,11 @@
+(name [int main(char[][] args) { … }])
+
+(trigger
+    (tab maina))
+
+(only-in source.d)
+
+(snippet [int main(char[][] args) {
+	%{1}
+	return 0;
+}])

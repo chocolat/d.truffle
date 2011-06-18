@@ -1,0 +1,8 @@
+(name [Stdout(format, …)])
+
+(trigger
+    (tab outf))
+
+(only-in source.d)
+
+(snippet [Stdout.format("%{1="foo = {\\"}}", %{2}).newline;])

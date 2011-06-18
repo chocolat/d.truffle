@@ -1,0 +1,8 @@
+(name [log.trace(…)])
+
+(trigger
+    (tab logt))
+
+(only-in source.d)
+
+(snippet [log.trace("%{1}");])

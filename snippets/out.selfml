@@ -1,0 +1,8 @@
+(name [Stdout(…)])
+
+(trigger
+    (tab out))
+
+(only-in source.d)
+
+(snippet [Stdout("%{1}").newline;])

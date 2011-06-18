@@ -1,0 +1,8 @@
+(name [Stderr(format, …)])
+
+(trigger
+    (tab errf))
+
+(only-in source.d)
+
+(snippet [Stderr.format("%{1="foo = {\\"}}", %{2}).newline;])

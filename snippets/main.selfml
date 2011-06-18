@@ -1,0 +1,10 @@
+(name [void main() { … }])
+
+(trigger
+    (tab main))
+
+(only-in source.d)
+
+(snippet [void main() {
+	%{1}
+}])

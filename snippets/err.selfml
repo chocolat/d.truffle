@@ -1,0 +1,8 @@
+(name [Stderr(…)])
+
+(trigger
+    (tab err))
+
+(only-in source.d)
+
+(snippet [Stderr("%{1}").newline;])

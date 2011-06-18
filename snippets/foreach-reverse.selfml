@@ -1,0 +1,10 @@
+(name [foreach_reverse(e; …) { … }])
+
+(trigger
+    (tab fer))
+
+(only-in source.d)
+
+(snippet [foreach_reverse(%{1="e"}; %{0}) {
+	
+}])
