@@ -5,7 +5,7 @@
 
 (only-in source.d)
 
-(snippet [class %{1="%{TM_FILENAME/(.*?)(\\..+)/$1/}"} {
+(snippet [class %{1="%{TM_FILENAME/(.*?)(\..+)/$1/}"} {
 	this(%{2}) {
 		%{0}
 	}

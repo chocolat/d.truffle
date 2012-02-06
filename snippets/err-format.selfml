@@ -5,4 +5,4 @@
 
 (only-in source.d)
 
-(snippet [Stderr.format("%{1="foo = {\\"}}", %{2}).newline;])
+(snippet [Stderr.format("%{1="foo = {\"}}", %{2}).newline;])

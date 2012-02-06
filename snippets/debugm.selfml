@@ -5,6 +5,6 @@
 
 (only-in source.d)
 
-(snippet [debug(%{1="%{TM_FILENAME/(.*?)(\\..+)/$1/}"}) {
+(snippet [debug(%{1="%{TM_FILENAME/(.*?)(\..+)/$1/}"}) {
 	%{0}
 }])
