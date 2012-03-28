@@ -5,4 +5,4 @@
 
 (only-in source.d)
 
-(snippet [private static final %{1="char[]"} %{2="name"} = %{4=""%{3="value"}""};])
+(snippet [private static final %{1="char[]"} %{2="name"} = %{4="\"%{3="value"}\""};])

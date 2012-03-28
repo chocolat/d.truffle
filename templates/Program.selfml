@@ -17,5 +17,5 @@ import tango.io.Stdout;
 import tango.text.convert.Format;
 
 void main() {
-	Stdout(`Hello`).newline;
+	Stdout(%{`Hello`}).newline;
 }]))
